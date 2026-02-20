@@ -6,11 +6,15 @@ p {
   background-color: hsl(209, 92%, 88%);
 }
 
+body {
+  overflow: hidden;
+  /* Prevent scrolls on landing */
+}
+
 .contenedor {
   background: transparent;
-  width: 80%;
-  height: 700px;
-  margin: 20px auto;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +25,24 @@ p {
   height: 575px;
   box-shadow: -20px -10px 40px 10px rgba(0, 0, 0, 0.5);
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: #333;
+  /* SPINE COLOR FALLBACK */
 }
 
-.libro {
-  display: flex;
+.libro-contenedor {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .titulo {
@@ -34,45 +51,22 @@ p {
   color: rgb(36, 29, 133);
   width: 200px;
   height: 100px;
-  position: relative;
-  left: -300px;
+  position: absolute;
+  left: 50px;
+  /* Centered relative to the 300px width minus title width (200px / 2 = 100, 150-100=50) */
   top: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
   background: linear-gradient(hsl(209, 82%, 88%) 95%, hsl(209, 62%, 68%) 95%);
-  background: linear-gradient(hsl(209, 82%, 88%) 95%, hsl(209, 62%, 68%) 95%);
   background-size: 100% 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
-  .contenedor {
-    width: 100%;
-    margin: 10px auto;
-    height: auto;
-    min-height: 100vh;
-    padding: 0 10px;
-  }
-
   .sombra {
-    width: 280px;
-    /* Slightly wider for better fit */
-    height: 540px;
-    box-shadow: -10px -5px 20px 5px rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
-  }
-
-  .portada {
-    width: 100%;
-    height: auto;
-  }
-
-  .titulo {
-    font-size: 2.5rem;
-    /* Better scale */
-    width: 180px;
-    left: -240px;
-    top: 90px;
+    transform: scale(0.85);
   }
 }
 

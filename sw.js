@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mis-recetas-v2';
+const CACHE_NAME = 'mis-recetas-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -13,12 +13,12 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS);
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {

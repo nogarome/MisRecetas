@@ -11,18 +11,27 @@ body {
   /* font-family: Helvetica, sans-serif; */
   /* font-family: 'Shadows Into Light Two', cursive; */
   font-family: "Sue Ellen Francisco", cursive;
+  overflow: hidden;
+  /* Prevent double scroll */
+  width: 100vw;
+  height: 100vh;
+}
+
+.volver {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 200;
 }
 
 .volver-a {
-  position: relative;
-  /* left: 220px;
-  top: 62.5px; */
-  left: 20px;
-  top: 20px;
   text-decoration: none;
   color: hsl(209, 92%, 28%);
   font-family: Helvetica, sans-serif;
-  font-size: 1.2em;
+  font-size: 1rem;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 
 #book {
@@ -31,9 +40,9 @@ body {
   width: 830px;
   height: 624px;
   left: 50%;
-  top: 25%;
-  margin-left: -400px;
-  margin-top: -125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Center Perfectly */
   box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 0.4);
 }
 
@@ -118,40 +127,44 @@ body {
 /* Responsividad para móviles */
 @media (max-width: 850px) {
   #book {
-    transform: scale(0.85);
-    transform-origin: center top;
-    margin-top: 20px;
-    top: 50px;
-    /* Better vertical alignment */
-    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #book {
-    transform: scale(0.75);
-    /* Slightly larger */
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 650px) {
+  #book {
+    transform: translate(-50%, -50%) scale(0.7);
   }
 }
 
 @media (max-width: 550px) {
   #book {
-    transform: scale(0.55);
-    /* Slightly larger */
+    transform: translate(-50%, -50%) scale(0.6);
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 450px) {
   #book {
-    transform: scale(0.48);
-    /* Optimized for Pixel 7a (width ~412px) */
-    top: 40px;
+    transform: translate(-50%, -50%) scale(0.5);
+    /* Pixel 7a (~412px wide) */
   }
 }
 
 @media (max-width: 400px) {
   #book {
-    transform: scale(0.42);
+    transform: translate(-50%, -50%) scale(0.45);
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  #book {
+    transform: translate(-50%, -50%) scale(0.4);
   }
 }
 
