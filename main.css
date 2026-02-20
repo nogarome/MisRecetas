@@ -1,0 +1,158 @@
+body,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(209, 92%, 88%);
+  color: rgb(36, 29, 133);
+  /* font-family: Helvetica, sans-serif; */
+  /* font-family: 'Shadows Into Light Two', cursive; */
+  font-family: "Sue Ellen Francisco", cursive;
+}
+
+.volver-a {
+  position: relative;
+  /* left: 220px;
+  top: 62.5px; */
+  left: 20px;
+  top: 20px;
+  text-decoration: none;
+  color: hsl(209, 92%, 28%);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+#book {
+  background: url(img/bookgris.png);
+  position: absolute;
+  width: 830px;
+  height: 624px;
+  left: 50%;
+  top: 25%;
+  margin-left: -400px;
+  margin-top: -125px;
+  box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 0.4);
+}
+
+#pages section {
+  background: url(img/papel.png) no-repeat;
+  display: block;
+  width: 400px;
+  height: 614px;
+  position: absolute;
+  left: 415px;
+  top: 5px;
+  overflow: hidden;
+}
+
+#pages section>div {
+  display: block;
+  width: 400px;
+  height: 614px;
+  font-size: 20px;
+}
+
+#pages section p,
+#pages section h2 {
+  padding: 3px 35px;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+#pages section .ingredientes-p {
+  margin-left: 15px;
+  padding: 0 35px;
+}
+
+#pages section h2 {
+  margin: 15px 0 10px;
+}
+
+#pageflip-canvas {
+  position: absolute;
+  z-index: 100;
+}
+
+.siguiente {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.num,
+.indice-num {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  border: 2px solid rgb(36, 29, 133);
+  border-radius: 50%;
+}
+
+.recetario {
+  margin-top: 15px;
+}
+
+.indice-receta {
+  display: flex;
+  align-items: center;
+}
+
+.indice-num {
+  width: 30px;
+  height: 30px;
+  margin-left: 35px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 850px) {
+  #book {
+    transform: scale(0.85);
+    transform-origin: center top;
+    margin-top: 20px;
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  #book {
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 550px) {
+  #book {
+    transform: scale(0.45);
+  }
+}
+
+@media (max-width: 400px) {
+  #book {
+    transform: scale(0.38);
+  }
+}
+
+/* Ajustes para que el texto sea legible al escalar si es necesario */
+@media (max-width: 600px) {
+  .volver {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .volver-a {
+    position: static;
+    display: inline-block;
+  }
+}

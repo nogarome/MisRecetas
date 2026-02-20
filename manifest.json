@@ -1,0 +1,21 @@
+{
+  "name": "Mis Recetas",
+  "short_name": "Recetas",
+  "description": "Mi libro de recetas personal",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e2f0fc",
+  "theme_color": "#241d85",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

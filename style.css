@@ -1,0 +1,66 @@
+body,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(209, 92%, 88%);
+}
+.contenedor {
+  background: transparent;
+  width: 80%;
+  height: 700px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sombra {
+  width: 300px;
+  height: 575px;
+  box-shadow: -20px -10px 40px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+.libro {
+  display: flex;
+}
+.titulo {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 3rem;
+  color: rgb(36, 29, 133);
+  width: 200px;
+  height: 100px;
+  position: relative;
+  left: -300px;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background: linear-gradient(hsl(209, 82%, 88%) 95%, hsl(209, 62%, 68%) 95%);
+  background: linear-gradient(hsl(209, 82%, 88%) 95%, hsl(209, 62%, 68%) 95%);
+  background-size: 100% 20px;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    width: 100%;
+    margin: 10px auto;
+    height: auto;
+    min-height: 100vh;
+  }
+  .sombra {
+    width: 260px;
+    height: 500px;
+    box-shadow: -10px -5px 20px 5px rgba(0, 0, 0, 0.4);
+  }
+  .portada {
+    width: 100%;
+    height: auto;
+  }
+  .titulo {
+    font-size: 2.2rem;
+    width: 160px;
+    left: -210px;
+    top: 80px;
+  }
+}
