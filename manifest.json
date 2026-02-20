@@ -3,6 +3,7 @@
   "short_name": "Recetas",
   "description": "Mi libro de recetas personal",
   "start_url": "index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#e2f0fc",
   "theme_color": "#241d85",
