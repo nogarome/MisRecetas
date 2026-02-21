@@ -66,21 +66,26 @@ body {
 
 @media (max-width: 600px) {
   .sombra {
-    transform: scale(0.85);
+    /* Scale to leave ~20px margins (40px total) */
+    transform: scale(calc((100vw - 40px) / 396));
   }
 }
 
 /* Specific adjustment for very narrow screens like Pixel 7a in portrait */
 @media (max-width: 400px) {
   .sombra {
-    width: 240px;
-    height: 460px;
+    width: 396px;
+    /* Reset to original so scale works correctly */
+    height: 575px;
+    transform: scale(calc((100vw - 40px) / 396));
   }
 
   .titulo {
-    font-size: 2rem;
-    width: 150px;
-    left: -200px;
-    top: 80px;
+    font-size: 3rem;
+    /* Keep original size */
+    width: 200px;
+    left: 50px;
+    /* Center relative to spine */
+    top: 100px;
   }
 }

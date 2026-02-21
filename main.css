@@ -150,7 +150,8 @@ body {
     /* Solo una página */
     background-position: -415px 0;
     /* Mostrar la parte derecha del libro (lomo a la izquierda) */
-    transform: translate(-50%, -50%) scale(1);
+    /* Dynamically scale to leave 20px margins (40px total) */
+    transform: translate(-50%, -50%) scale(calc((100vw - 40px) / 415));
   }
 
   #pages section {
@@ -164,17 +165,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
-  #book {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-}
-
-@media (max-width: 400px) {
-  #book {
-    transform: translate(-50%, -50%) scale(0.85);
-  }
-}
+/* Removed intermediate fixed scales in favor of the dynamic calc above */
 
 @media (max-height: 500px) and (orientation: landscape) {
   #book {
