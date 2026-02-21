@@ -133,34 +133,35 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   #book {
+    width: 415px;
+    /* Solo una página */
+    background-position: -415px 0;
+    /* Mostrar la parte derecha del libro (lomo a la izquierda) */
     transform: translate(-50%, -50%) scale(0.85);
   }
-}
 
-@media (max-width: 650px) {
-  #book {
-    transform: translate(-50%, -50%) scale(0.8);
+  #pages section {
+    left: 5px;
+    /* Centrar la página en el nuevo ancho */
   }
-}
 
-@media (max-width: 550px) {
-  #book {
-    transform: translate(-50%, -50%) scale(0.75);
+  #pageflip-canvas {
+    display: none;
+    /* El canvas actual está diseñado para dos páginas, lo ocultamos o ajustamos luego */
   }
 }
 
 @media (max-width: 450px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.65);
-    /* Pixel 7a (~412px wide) */
+    transform: translate(-50%, -50%) scale(0.75);
   }
 }
 
 @media (max-width: 400px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.7);
   }
 }
 

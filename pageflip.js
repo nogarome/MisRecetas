@@ -80,13 +80,26 @@
 	
 	function getMousePos(clientX, clientY) {
 		var rect = book.getBoundingClientRect();
-		// Calculate the current scale factor based on the actual rendered width vs defined width
-		var scale = rect.width / BOOK_WIDTH;
+		// Determine if we are in single page mode (mobile)
+		var isSinglePage = rect.width < 600 * (rect.width / book.offsetWidth); 
+		// Actually, let's just check the offsetWidth which is the raw CSS width
+		isSinglePage = book.offsetWidth < 500;
+
+		var scale = rect.width / (isSinglePage ? 415 : BOOK_WIDTH);
 		
-		return {
-			x: (clientX - rect.left - ( (BOOK_WIDTH * scale) / 2 )) / scale,
-			y: (clientY - rect.top) / scale
-		};
+		if (isSinglePage) {
+			// In single page mode, x=0 is the left edge (the spine)
+			return {
+				x: (clientX - rect.left) / scale,
+				y: (clientY - rect.top) / scale
+			};
+		} else {
+			// In dual page mode, x=0 is the center (the spine)
+			return {
+				x: (clientX - rect.left - ( (BOOK_WIDTH * scale) / 2 )) / scale,
+				y: (clientY - rect.top) / scale
+			};
+		}
 	}
 
 	function mouseMoveHandler( event ) {
@@ -115,13 +128,27 @@
 	}
 
 	function handleStart(x, y) {
-		// Make sure the mouse pointer is inside of the book
-		if (Math.abs(x) < PAGE_WIDTH) {
-			if (x < 0 && page - 1 >= 0) {
+		var isSinglePage = book.offsetWidth < 500;
+		if (isSinglePage) {
+			// In single page mode, we can only go forward by dragging from right to left
+			// or backward by dragging from left to right.
+			// However, since only the right page exists in the DOM structure (left: 5px),
+			// folding it (current page) makes the next one visible.
+			if (x > 200 && page < flips.length) {
+				flips[page].dragging = true;
+			} else if (x < 200 && page > 0) {
+				// Dragging from the left side should probably bring back the previous page
 				flips[page - 1].dragging = true;
 			}
-			else if (x > 0 && page + 1 < flips.length) {
-				flips[page].dragging = true;
+		} else {
+			// Dual page mode
+			if (Math.abs(x) < PAGE_WIDTH) {
+				if (x < 0 && page - 1 >= 0) {
+					flips[page - 1].dragging = true;
+				}
+				else if (x > 0 && page + 1 < flips.length) {
+					flips[page].dragging = true;
+				}
 			}
 		}
 	}
@@ -135,15 +162,27 @@
 	}
 
 	function handleEnd() {
+		var isSinglePage = book.offsetWidth < 500;
 		for( var i = 0; i < flips.length; i++ ) {
 			if( flips[i].dragging ) {
-				if( mouse.x < 0 ) {
-					flips[i].target = -1;
-					page = Math.min( page + 1, flips.length );
-				}
-				else {
-					flips[i].target = 1;
-					page = Math.max( page - 1, 0 );
+				if (isSinglePage) {
+					if( mouse.x < 200 ) { // Dragged to the left half of the single page
+						flips[i].target = -1;
+						page = Math.min( page + 1, flips.length );
+					}
+					else {
+						flips[i].target = 1;
+						page = Math.max( page - 1, 0 );
+					}
+				} else {
+					if( mouse.x < 0 ) {
+						flips[i].target = -1;
+						page = Math.min( page + 1, flips.length );
+					}
+					else {
+						flips[i].target = 1;
+						page = Math.max( page - 1, 0 );
+					}
 				}
 			}
 			flips[i].dragging = false;
