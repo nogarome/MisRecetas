@@ -150,7 +150,7 @@ body {
     /* Solo una página */
     background-position: -415px 0;
     /* Mostrar la parte derecha del libro (lomo a la izquierda) */
-    transform: translate(-50%, -50%) scale(0.85);
+    transform: translate(-50%, -50%) scale(1);
   }
 
   #pages section {
@@ -166,13 +166,13 @@ body {
 
 @media (max-width: 450px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.75);
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
 @media (max-width: 400px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(0.85);
   }
 }
 
