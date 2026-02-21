@@ -122,6 +122,8 @@ body {
   width: 30px;
   height: 30px;
   margin-left: 35px;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 18px;
 }
 
 /* Responsividad para móviles */
@@ -133,32 +135,32 @@ body {
 
 @media (max-width: 750px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.85);
   }
 }
 
 @media (max-width: 650px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
 
 @media (max-width: 550px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.75);
   }
 }
 
 @media (max-width: 450px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.65);
     /* Pixel 7a (~412px wide) */
   }
 }
 
 @media (max-width: 400px) {
   #book {
-    transform: translate(-50%, -50%) scale(0.45);
+    transform: translate(-50%, -50%) scale(0.6);
   }
 }
 

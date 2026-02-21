@@ -73,50 +73,70 @@
 	document.addEventListener( "mousemove", mouseMoveHandler, false );
 	document.addEventListener( "mousedown", mouseDownHandler, false );
 	document.addEventListener( "mouseup", mouseUpHandler, false );
-	
-	function mouseMoveHandler( event ) {
-		// Get the current scale of the book
-		// Obtener la escala actual del libro
-		var scale = 1;
-		var style = window.getComputedStyle(book);
-		var matrix = new WebKitCSSMatrix(style.transform);
-		if (matrix.a !== 1) scale = matrix.a;
 
-		// Offset mouse position so that the top of the book spine is 0,0
-		// Desplazar la posición del mouse para que la parte superior del lomo del libro sea 0,0
+	document.addEventListener( "touchstart", touchStartHandler, false );
+	document.addEventListener( "touchmove", touchMoveHandler, false );
+	document.addEventListener( "touchend", touchEndHandler, false );
+	
+	function getMousePos(clientX, clientY) {
 		var rect = book.getBoundingClientRect();
-		mouse.x = (event.clientX - rect.left - ( (BOOK_WIDTH * scale) / 2 )) / scale;
-		mouse.y = (event.clientY - rect.top) / scale;
+		// Calculate the current scale factor based on the actual rendered width vs defined width
+		var scale = rect.width / BOOK_WIDTH;
+		
+		return {
+			x: (clientX - rect.left - ( (BOOK_WIDTH * scale) / 2 )) / scale,
+			y: (clientY - rect.top) / scale
+		};
+	}
+
+	function mouseMoveHandler( event ) {
+		var pos = getMousePos(event.clientX, event.clientY);
+		mouse.x = pos.x;
+		mouse.y = pos.y;
 	}
 	
+	function touchMoveHandler( event ) {
+		var pos = getMousePos(event.touches[0].clientX, event.touches[0].clientY);
+		mouse.x = pos.x;
+		mouse.y = pos.y;
+	}
+
 	function mouseDownHandler( event ) {
+		handleStart(mouse.x, mouse.y);
+		// Prevents the text selection
+		event.preventDefault();
+	}
+
+	function touchStartHandler( event ) {
+		var pos = getMousePos(event.touches[0].clientX, event.touches[0].clientY);
+		mouse.x = pos.x;
+		mouse.y = pos.y;
+		handleStart(mouse.x, mouse.y);
+	}
+
+	function handleStart(x, y) {
 		// Make sure the mouse pointer is inside of the book
-		// Asegúrate de que el puntero del mouse esté dentro del libro
-		if (Math.abs(mouse.x) < PAGE_WIDTH) {
-			if (mouse.x < 0 && page - 1 >= 0) {
-				// We are on the left side, drag the previous page
-				// Estamos en el lado izquierdo, arrastre la página anterior
+		if (Math.abs(x) < PAGE_WIDTH) {
+			if (x < 0 && page - 1 >= 0) {
 				flips[page - 1].dragging = true;
 			}
-			else if (mouse.x > 0 && page + 1 < flips.length) {
-				// We are on the right side, drag the current page
-				// Estamos en el lado derecho, arrastra la página actual
+			else if (x > 0 && page + 1 < flips.length) {
 				flips[page].dragging = true;
 			}
 		}
-		
-		// Prevents the text selection
-		// Evita la selección de texto
-		event.preventDefault();
 	}
 	
 	function mouseUpHandler( event ) {
+		handleEnd();
+	}
+
+	function touchEndHandler( event ) {
+		handleEnd();
+	}
+
+	function handleEnd() {
 		for( var i = 0; i < flips.length; i++ ) {
-			// If this flip was being dragged, animate to its destination
-			// Si este flip fue arrastrado, animar a su destino
 			if( flips[i].dragging ) {
-				// Figure out which page we should navigate to
-				// Averigua a qué página debemos navegar
 				if( mouse.x < 0 ) {
 					flips[i].target = -1;
 					page = Math.min( page + 1, flips.length );
@@ -126,7 +146,6 @@
 					page = Math.max( page - 1, 0 );
 				}
 			}
-			
 			flips[i].dragging = false;
 		}
 	}
