@@ -77,6 +77,30 @@
 	document.addEventListener( "touchstart", touchStartHandler, false );
 	document.addEventListener( "touchmove", touchMoveHandler, false );
 	document.addEventListener( "touchend", touchEndHandler, false );
+
+	// Handle Index Navigation
+	var indexItems = document.querySelectorAll('.indice-receta');
+	indexItems.forEach(function(item) {
+		item.addEventListener('click', function(e) {
+			var recetaNum = parseInt(this.getAttribute('data-receta'));
+			if (!isNaN(recetaNum)) {
+				// Formula: Receta 1 starts at page 1, Receta 2 at 3, etc.
+				var targetPage = (recetaNum - 1) * 2 + 1;
+				goToPage(targetPage);
+			}
+		});
+	});
+
+	function goToPage(target) {
+		page = target;
+		for (var i = 0; i < flips.length; i++) {
+			if (i < page) {
+				flips[i].target = -1;
+			} else {
+				flips[i].target = 1;
+			}
+		}
+	}
 	
 	function getMousePos(clientX, clientY) {
 		var rect = book.getBoundingClientRect();
