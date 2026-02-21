@@ -81,15 +81,33 @@ window.initPageFlip = function() {
 	// Handle Index Navigation
 	var indexItems = document.querySelectorAll('.indice-receta');
 	indexItems.forEach(function(item) {
-		item.addEventListener('click', function(e) {
-			var recetaNum = parseInt(this.getAttribute('data-receta'));
-			if (!isNaN(recetaNum)) {
-				// Formula: Receta 1 starts at page 1, Receta 2 at 3, etc.
-				var targetPage = (recetaNum - 1) * 2 + 1;
-				goToPage(targetPage);
+		item.addEventListener('mousedown', function(e) {
+			e.stopPropagation(); // Prevent the book from starting a drag
+			var recetaId = this.getAttribute('data-receta');
+			if (recetaId) {
+				// Find the first section that has this recipe ID
+				var targetIndex = -1;
+				for (var i = 0; i < pages.length; i++) {
+					if (pages[i].getAttribute('data-receta-id') === recetaId) {
+						targetIndex = i;
+						break;
+					}
+				}
+				if (targetIndex !== -1) {
+					goToPage(targetIndex);
+				}
 			}
 		});
 	});
+
+	// Handle button "Ir al Índice"
+	var btnIndice = document.getElementById('btn-indice');
+	if (btnIndice) {
+		btnIndice.addEventListener('click', function(e) {
+			e.preventDefault();
+			goToPage(0);
+		});
+	}
 
 	function goToPage(target) {
 		page = target;
@@ -140,8 +158,8 @@ window.initPageFlip = function() {
 
 	function mouseDownHandler( event ) {
 		handleStart(mouse.x, mouse.y);
-		// Prevents the text selection
-		event.preventDefault();
+		// Prevents the text selection only if we are interacting with the book areas
+		// event.preventDefault(); // REMOVED to allow clicking on index items
 	}
 
 	function touchStartHandler( event ) {

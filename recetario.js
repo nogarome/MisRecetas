@@ -29,6 +29,7 @@ function renderRecetario(recetas) {
     recetas.forEach(receta => {
         // First page of the recipe
         let currentSection = document.createElement('section');
+        currentSection.setAttribute('data-receta-id', receta.id);
         let sectionDiv = document.createElement('div');
         
         let headerHtml = `
