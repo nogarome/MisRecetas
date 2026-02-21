@@ -188,15 +188,22 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 10px;
+    position: absolute;
+    /* Aseguramos que se mantenga arriba */
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 8px;
   }
 
   .volver-a {
-    position: static;
     display: inline-block;
-    padding: 8px 12px;
-    background: rgba(36, 29, 133, 0.05);
-    /* Subtle highlight */
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(36, 29, 133, 0.3);
     border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 }
