@@ -1,6 +1,6 @@
 
 
-(function() {
+window.initPageFlip = function() {
 	
 	// Dimensions of the whole book
 	// Dimensiones de todo el libro
@@ -340,6 +340,6 @@
 		context.restore();
 	}
 	
-})();
+};
 
 

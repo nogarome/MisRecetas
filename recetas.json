@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "titulo": "Sopa de cebolla",
+    "ingredientes": [
+      "400 g. de cebollas cortadas en tiras muy finas",
+      "1 diente de ajo picado",
+      "1 cucharada de mantequilla",
+      "2 cucharadas de aceite de oliva",
+      "1 cucharada sopera rasa de harina",
+      "2 l. de caldo de carne o un litro de caldo más uno de agua",
+      "6 rebanadas gruesas de pan untadas con ajo",
+      "4 puñados grandes de queso rallado graso",
+      "Sal y pimienta"
+    ],
+    "preparacion": [
+      "En una cazuela muy amplia, añadimos las cebollas, el ajo, la mantequilla, el aceite y una pizca de sal. A fuego muy suave, no dejamos de dar vueltas, de forma que la verdura se vuelva tierna, pero sin coger color. Lo hacemos con la tapa puesta y estando muy atentos, durante al menos 45 minutos. Pasados, añadimos la harina y dejamos que se cocine dando vueltas otros 5 minutos más, teniendo cuidado de que no se agarre.",
+      "En ese momento, mojamos con el caldo de carne caliente y si acaso con la pastilla. Si echamos un litro de caldo y un litro de agua, debemos incrementar la cantidad de concentrado en pastilla (3 pastillas tipo doble caldo de Knorr). Salpimentar y dejar que hierva el conjunto suavemente por espacio de unos 30 minutos, sin tapar. Rectificamos de sal si es necesario.",
+      "**Acabado y presentación:** Ahora tenemos dos opciones. O volcar todo el conjunto en una sopera grande o en seis soperas pequeñas de ración o boles (de unos 250 cc de capacidad cada una. Han de ser soperas que resistan el calor de un horneado. Sobre la sopa colocamos las rebanadas de pan untadas con ajo y espolvoreamos con el queso rallado. Terminamos la cocción de la sopa en el horno a 200º, dejando que la superficie forme una costra gratinada y por acción del calor las rebanadas de pan queden bien embebidas de sopa."
+    ],
+    "variante": "A la vez que rehogamos las cebollas, podemos añadir un poco de beicon ahumado, cortado muy fino, para que de al conjunto un sabor pronunciado."
+  },
+  {
+    "id": 2,
+    "titulo": "Sopa de tomate y patata",
+    "ingredientes": [
+      "350 g. de patatas (≈2 medianas)",
+      "320 g. de tomates (4 de pera)",
+      "75 g. de cebollas (1/2 grande)",
+      "50 g. de pimientos",
+      "1 diente de ajo",
+      "1 huevo",
+      "1 poco de perejil",
+      "1 litro de agua",
+      "15 g. de sal (para 1 litro de agua)",
+      "Aceite"
+    ],
+    "preparacion": [
+      "Se sofríe la cebolla, el diente de ajo entero y el pimiento. Cuando el ajo haya tomado color se saca y se machaca junto a un poco de sal y se reserva. Se corta las patatas en 4 longitudinalmente y luego en rodajas muy finas (1 o 2 mm). Se ponen en una sartén y se fríen. Hay que tener en cuenta que luego se cuecen 15 min. Cuando esté pochada la cebolla con el pimiento se agrega el tomate cortado en cuadritos pequeños hasta que se fría un poco,",
+      "a continuación, se añade las patatas, el ajo machacado y la sal, se rehoga un poco y se vierte el agua. Cuando empiece a hervir, dejar hervir 15 min. hasta que la patata esté tierna sin que se deshaga."
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Sopa de puerro y patata",
+    "subtitulo": "Receta de Paul Bocuse",
+    "variante": "Si se quiere una Vichyssoise, al retirar del fuego se tritura añadiendo la nata.",
+    "ingredientes": [
+      "200 g. de puerros (2 medianos)",
+      "350 g. de patatas (≈2 medianas)",
+      "100 g. de mantequilla",
+      "100 g. de nata",
+      "1 litro de agua",
+      "15 g. de sal (para 1 litro de agua)"
+    ],
+    "preparacion": [
+      "Se retira la parte verde de los puerros y se corta longitudinalmente la parte más cerca de las hojas en 4, se retira la primera capa y se lava bien, se acaba de cortar todo en 4 y se lonchea muy fino. Se corta las patatas longitudinalmente en 4 y luego en rodajas muy finas (1 o 2 mm). Se pone a pochar el puerro con la mantequilla, que sude bien sin que coja color. Una vez bien pochado se añade las patatas, la sal y se rehoga un poco. A continuación, se vierte el agua y cuando empiece a hervir,",
+      "dejar hervir 15 min. justos. Se retira y se remueve un poco, se echa los 100 g de nata y se vuelve a remover."
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Sopa de puerro calabacin y patata",
+    "ingredientes": [
+      "200 g. de puerros (2 medianos)",
+      "1 patata no muy grande (≈150 g.)",
+      "1 calabacin (≈200 - 250 g.)",
+      "100 g. de mantequilla",
+      "100 g. de nata",
+      "1 litro de agua",
+      "15 g. de sal (para 1 litro de agua)"
+    ],
+    "preparacion": [
+      "Se retira la parte verde de los puerros y se corta longitudinalmente la parte más cerca de las hojas en 4, se retira la primera capa y se lava bien, se acaba de cortar todo en 4 y se lonchea muy fino. Se corta la patata y el calabacín pelado longitudinalmente en 4 y luego en rodajas muy finas (1 o 2 mm). Se pone a pochar el puerro con la mantequilla, que sude bien sin que coja color. Una vez bien pochado se añade la patata, el calabacín, la sal y se rehoga. A continuación, se vierte el agua y cuando empiece",
+      "a hervir, dejar cocer 15 mm justos. Se retira y se remueve un poco, se echa los 100 g de nata y se vuelve a remover."
+    ],
+    "variante": "Si se quiere tipo Vichyssoise, al retirar del fuego se tritura añadiendo la nata."
+  },
+  {
+    "id": 5,
+    "titulo": "Sopa de pescado",
+    "ingredientes": [
+      "2 litros de caldo de pescado",
+      "1 preparado de paella (Mercadona)",
+      "1 o 2 filetes de merluza",
+      "1 cebolla",
+      "1/2 bote de tomate frito (200 g.)",
+      "1 o 2 huevos duros (al gusto)",
+      "pan rallado",
+      "3 cucharadas sopera de aceite",
+      "sal y azafrán o colorante"
+    ],
+    "preparacion": [
+      "Limpiamos bien los ingredientes del preparado, las chirlas las dejamos en un bol con agua y sal para que echen la arena. En una olla ponemos un litro de caldo, las gambas, los aros de calamar, los mejillones y la merluza durante 10 minutos. Reservamos el agua de hervir. Pelamos las gambas, desmenuzamos la merluza con cuidado de que no se cuele ninguna raspa, desechamos las conchas de los mejillones y cortamos en trozos los aros de calamar. En una olla echamos unas 3 cucharadas soperas de aceite. Picamos la cebolla",
+      "finamente y sofreímos. Una vez sofrita, añadimos el tomate y las chirlas hasta que el tomate se fría y se abran las chirlas. A continuación, Incorporamos el caldo anteriormente reservado más el otro litro. Añadimos la merluza, las gambas, calamares y mejillones. Se añade un pellizco de azafrán o un poco de colorante (si se le quiere dar un poco de color). Pelamos los 2 huevos y los rallamos e incorporamos a la sopa. Añadimos 2 o 3 puñados de pan rallado según como nos guste de espesa y dejamos hervir a fuego medio durante 10-15 minutos. A la mitad del tiempo probamos de sal y rectificamos."
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Alitas de pollo al horno",
+    "subtitulo": "Receta de Martin Berasategui",
+    "ingredientes": [
+      "12 alitas de pollo cortadas por la mitad",
+      "10 dientes de ajo fileteados",
+      "1 guindilla (cayena)",
+      "40 g. de aceite de oliva virgen extra",
+      "120 g. de vinagre (60 de sidra – 60 de Jerez)",
+      "1 pastilla de caldo",
+      "Perejil picado"
+    ],
+    "preparacion": [
+      "Se enciende el horno a máxima potencia (calor arriba y abajo) la rejilla en la parte central y la bandeja en la parte de abajo. En un cazo se vierte el vinagre y se pone al fuego. Se añade la pastilla de caldo y se deja que se consuma a la mitad. Se aparta y se deja enfriar. Mientras en una sartén se echa el aceite, los ajos y la guindilla. Se le da un hervor sin que los ajos se doren (muy poquito tiempo). Se aparta y se deja los ajos en el aceite que se enfríen. Pasados unos minutos se vuelca el contenido de la",
+      "sartén en el cazo y se reserva. Cando el horno este caliente se ponen las alitas encima de la rejilla con la piel hacia arriba. La grasa que suelten caerá a la bandeja. Se dejan 15 minutos. Una vez hechas, se sacan del horno y se vuelcan en la bandeja que ha recogido la grasa, se vierte el contenido del cazo (debe de estar frio), el perejil (si gusta) y se remueve para que las alitas se impregnen bien."
+    ]
+  }
+]

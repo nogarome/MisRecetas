@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mis-recetas-v5';
+const CACHE_NAME = 'mis-recetas-v7';
 const ASSETS = [
   './',
   './index.html',
@@ -6,10 +6,14 @@ const ASSETS = [
   './style.css',
   './main.css',
   './pageflip.js',
+  './recetario.js',
+  './recetas.json',
   './manifest.json',
   './img/bookgris.png',
   './img/papel.png',
-  './img/portada.png'
+  './img/portada.png',
+  './img/icon-192.png',
+  './img/icon-512.png'
 ];
 
 self.addEventListener('install', (event) => {
