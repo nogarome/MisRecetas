@@ -114,29 +114,56 @@
     ]
   },
   {
-  "id": 7,
-  "titulo": "El mejor pollo al ajillo",
-  "ingredientes": [
-    "Pollo troceado (macerado previamente con sal y tomillo)",
-    "Aproximadamente 12 dientes de ajo pelados (para la salsa)",
-    "2 o 3 dientes de ajo sin pelar (para aromatizar el aceite)",
-    "2 dientes de ajo picados (para el final)",
-    "Perejil fresco",
-    "1 tacita de aceite de oliva virgen",
-    "1 cucharada de harina",
-    "1/2 botella de cava o vino blanco espumoso",
-    "1 tazón generoso de caldo de pollo",
-    "Sal y tomillo"
-  ],
-  "preparacion": [
-    "Macerar el pollo con sal y tomillo, preferiblemente desde el día anterior.",
-    "Preparar la base de ajillo cocinando 12 dientes de ajo pelados en aceite a temperatura muy baja durante 5 a 8 minutos hasta que se ablanden y tomen un tono marrón. Retirar y reservar los ajos.",
-    "En el mismo aceite aromatizado, añadir sal y los ajos sin pelar. Sellar el pollo a fuego muy fuerte para que se tueste por fuera pero quede crudo por dentro. Retirar y reservar el pollo.",
-    "Ligar la salsa añadiendo una cucharada de harina al aceite. Reincorporar los ajos blandos y chafarlos hasta que se conviertan en una pasta.",
-    "Añadir el cava o vino blanco espumoso y dejar reducir de 2 a 3 minutos hasta conseguir una textura cremosa.",
-    "Regresar el pollo a la cazuela, ajustar de sal y tomillo, y realizar una primera cocción a fuego medio durante 10 minutos.",
-    "Para la segunda cocción, añadir el caldo de pollo, los dientes de ajo picados y el perejil. Tapar y dejar hervir durante 20 minutos hasta que los ajos de la salsa se deshagan por completo."
-  ],
-  "variante": "Se recomienda utilizar pollo criado en el campo para un mejor sabor y acompañar el plato con patatas fritas aromatizadas con tomillo."
+    "id": 7,
+    "titulo": "El mejor pollo al ajillo",
+    "ingredientes": [
+      "Pollo troceado (macerado previamente con sal y tomillo)",
+      "Aproximadamente 12 dientes de ajo pelados (para la salsa)",
+      "2 o 3 dientes de ajo sin pelar (para aromatizar el aceite)",
+      "2 dientes de ajo picados (para el final)",
+      "Perejil fresco",
+      "1 tacita de aceite de oliva virgen",
+      "1 cucharada de harina",
+      "1/2 botella de cava o vino blanco espumoso",
+      "1 tazón generoso de caldo de pollo",
+      "Sal y tomillo"
+    ],
+    "preparacion": [
+      "Macerar el pollo con sal y tomillo, preferiblemente desde el día anterior.",
+      "Preparar la base de ajillo cocinando 12 dientes de ajo pelados en aceite a temperatura muy baja durante 5 a 8 minutos hasta que se ablanden y tomen un tono marrón. Retirar y reservar los ajos.",
+      "En el mismo aceite aromatizado, añadir sal y los ajos sin pelar. Sellar el pollo a fuego muy fuerte para que se tueste por fuera pero quede crudo por dentro. Retirar y reservar el pollo.",
+      "Ligar la salsa añadiendo una cucharada de harina al aceite. Reincorporar los ajos blandos y chafarlos hasta que se conviertan en una pasta.",
+      "Añadir el cava o vino blanco espumoso y dejar reducir de 2 a 3 minutos hasta conseguir una textura cremosa.",
+      "Regresar el pollo a la cazuela, ajustar de sal y tomillo, y realizar una primera cocción a fuego medio durante 10 minutos.",
+      "Para la segunda cocción, añadir el caldo de pollo, los dientes de ajo picados y el perejil. Tapar y dejar hervir durante 20 minutos hasta que los ajos de la salsa se deshagan por completo."
+    ],
+    "variante": "Se recomienda utilizar pollo criado en el campo para un mejor sabor y acompañar el plato con patatas fritas aromatizadas con tomillo."
+  },
+  {
+    "id": 8,
+    "titulo": "Empanadas Tucumanas de Matambre por Napoleón Castellote",
+    "ingredientes": [
+      "1 kg de matambre ya cocido (obtenido de aproximadamente 2 kg de matambre crudo)",
+      "600 g de cebolla blanca picada",
+      "100 g de grasa de pella",
+      "500 ml (medio litro) de caldo de cocción del matambre",
+      "3 cucharadas de pimentón dulce (de la Vera)",
+      "1 y 1/2 cucharadas de ají molido (sustituirlo con un poco de cayena si gusta el picante)",
+      "1/2 cucharadita de comino",
+      "Sal a gusto",
+      "Huevo duro picado y cebolla de verdeo fresca",
+      "Masa: 1 kg de harina, 200 g de grasa, 450 cm³ de agua y 15 g de sal"
+    ],
+    "preparacion": [
+      "Cocinar el matambre en agua con sal durante al menos 2 horas hasta que esté tierno.",
+      "Dejar enfriar la carne dentro de su propio caldo para que no se seque y luego cortarla en cubos de 1 cm siguiendo el sentido de la fibra.",
+      "Derretir la grasa en una cacerola y transparentar la cebolla con una pizca de sal.",
+      "Preparar el fondo de sabor disolviendo el pimentón, el ají molido y el comino en el caldo de cocción caliente.",
+      "Incorporar el matambre cortado a la cebolla y añadir el caldo condimentado; dejar enfriar el 'recado' preferentemente de un día para otro para que los jugos solidifiquen.",
+      "Agregar el huevo duro y la cebolla de verdeo al relleno frío antes de armar las empanadas.",
+      "Armar los discos con masa casera, rellenar generosamente y realizar el repulgue tradicional (13 pliegues).",
+      "Cocinar en horno muy caliente (200 °C) colocando la placa primero en el piso del horno para lograr una base crocante y luego terminar la cocción en la parte superior."
+    ],
+    "variante": "Es fundamental servirlas con un gajo de limón y seguir la técnica de comerlas con las piernas abiertas para no mancharse con el jugo."
   }
 ]
