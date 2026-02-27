@@ -141,7 +141,8 @@
   },
   {
     "id": 8,
-    "titulo": "Empanadas Tucumanas de Matambre por Napoleón Castellote",
+    "titulo": "Empanadas Tucumanas de Matambre",
+    "subtitulo": "Receta de Napoleón Castellote",
     "ingredientes": [
       "1 kg de matambre ya cocido (obtenido de aproximadamente 2 kg de matambre crudo)",
       "600 g de cebolla blanca picada",
@@ -152,18 +153,41 @@
       "1/2 cucharadita de comino",
       "Sal a gusto",
       "Huevo duro picado y cebolla de verdeo fresca",
-      "Masa: 1 kg de harina, 200 g de grasa, 450 cm³ de agua y 15 g de sal"
+      "Masa: ver receta de masa de empanadas Tucumanas"
     ],
     "preparacion": [
       "Cocinar el matambre en agua con sal durante al menos 2 horas hasta que esté tierno.",
       "Dejar enfriar la carne dentro de su propio caldo para que no se seque y luego cortarla en cubos de 1 cm siguiendo el sentido de la fibra.",
       "Derretir la grasa en una cacerola y transparentar la cebolla con una pizca de sal.",
       "Preparar el fondo de sabor disolviendo el pimentón, el ají molido y el comino en el caldo de cocción caliente.",
-      "Incorporar el matambre cortado a la cebolla y añadir el caldo condimentado; dejar enfriar el 'recado' preferentemente de un día para otro para que los jugos solidifiquen.",
+      "Incorporar el matambre cortado a la cebolla y añadir el caldo condimentado y dejar cocer unos minutos; enfriar el 'preparado' preferentemente de un día para otro para que los jugos solidifiquen.",
       "Agregar el huevo duro y la cebolla de verdeo al relleno frío antes de armar las empanadas.",
       "Armar los discos con masa casera, rellenar generosamente y realizar el repulgue tradicional (13 pliegues).",
-      "Cocinar en horno muy caliente (200 °C) colocando la placa primero en el piso del horno para lograr una base crocante y luego terminar la cocción en la parte superior."
+      "Cocinar en horno muy caliente (200 °C) colocando la placa primero en el piso del horno para lograr una base crocante y luego terminar la cocción en la parte superior.",
+      "Si se decide freírlas, es requisito indispensable que las empanadas estén completamente descongeladas y a temperatura ambiente antes de cocinarlas en aceite caliente entre 170 y 180 °C."
     ],
     "variante": "Es fundamental servirlas con un gajo de limón y seguir la técnica de comerlas con las piernas abiertas para no mancharse con el jugo."
-  }
+  },
+  {
+  "id": 9,
+  "titulo": "Masa para Empanadas Tucumanas",
+  "subtitulo": "Receta de Napoleón Castellote",
+  "ingredientes": [
+    "1 kg de harina",
+    "200 g de grasa de pella",
+    "450 cm³ del caldo de la cocción del matambre",
+    "15 g de sal"
+  ],
+  "preparacion": [
+    "Mezclar la harina, la grasa de pella, el caldo de la cocción del matambre y la sal hasta obtener una masa elástica.",
+    "Estirar la masa manteniendo un espesor gruesito, ya que debe ser lo suficientemente resistente para contener el relleno jugoso.",
+    "Formar los discos, rellenar y cerrar buscando la forma de media luna, eliminando el aire de su interior.",
+    "Realizar el repulgue tradicional de 13 pliegues, presionando de abajo hacia arriba.",
+    "Precalentar el horno a una temperatura alta de aproximadamente 200 °C.",
+    "Colocar la placa directamente en el piso del horno durante unos 10 minutos para lograr una base crocantita.",
+    "Finalizar la cocción en la parte superior del horno por otros 10 minutos.",
+    "Si se decide freírlas, es requisito indispensable que las empanadas estén completamente descongeladas y a temperatura ambiente antes de cocinarlas en aceite caliente entre 170 y 180 °C."
+  ],
+  "variante": "La masa casera es fundamentalmente más sabrosa y salada que la comprada, lo cual es necesario para equilibrar el sabor del relleno."
+}
 ]
