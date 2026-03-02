@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderRecetario(recetas) {
+    // Ordenar alfabéticamente por título (respetando acentos y ñ)
+    recetas.sort((a, b) => a.titulo.localeCompare(b.titulo, 'es'));
+
     const pagesContainer = document.getElementById('pages');
     const PAGE_HEIGHT = 614;
     // Espacio reservado para el marcador ">" al final de la página
